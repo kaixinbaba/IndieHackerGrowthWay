@@ -1,0 +1,90 @@
+sections:
+  - id: inspiration
+    title: Inspiration
+    description: Get ideas and inspiration for your next project
+    color: "#8B5CF6"
+    icon: Lightbulb
+    resources:
+      - title: Product Hunt
+        description: Discover the latest products and get inspired
+        url: https://www.producthunt.com
+        tags: [ideas, products, discovery]
+      - title: Indie Hackers
+        description: Learn from successful indie developers
+        url: https://www.indiehackers.com
+        tags: [community, success-stories]
+
+  - id: build
+    title: Build
+    description: Tools and resources for building your MVP
+    color: "#3B82F6"
+    icon: Tool
+    resources:
+      - title: GitHub
+        description: Host and manage your code
+        url: https://github.com
+        tags: [code, version-control]
+      - title: Vercel
+        description: Deploy your web applications
+        url: https://vercel.com
+        tags: [hosting, deployment]
+
+  - id: launch
+    title: Launch
+    description: Resources for launching your product
+    color: "#10B981"
+    icon: Rocket
+    resources:
+      - title: BetaList
+        description: Get early adopters for your startup
+        url: https://betalist.com
+        tags: [launch, beta-testing]
+      - title: Launch Checklist
+        description: Comprehensive launch checklist
+        url: https://launchchecklist.dev
+        tags: [checklist, planning]
+
+  - id: grow
+    title: Grow
+    description: Growth strategies and marketing tools
+    color: "#F59E0B"
+    icon: TrendingUp
+    resources:
+      - title: Buffer
+        description: Social media management
+        url: https://buffer.com
+        tags: [social-media, marketing]
+      - title: Google Analytics
+        description: Track your website analytics
+        url: https://analytics.google.com
+        tags: [analytics, metrics]
+
+  - id: monetize
+    title: Monetize
+    description: Turn your product into a business
+    color: "#EF4444"
+    icon: DollarSign
+    resources:
+      - title: Stripe
+        description: Payment processing platform
+        url: https://stripe.com
+        tags: [payments, billing]
+      - title: Gumroad
+        description: Sell digital products
+        url: https://gumroad.com
+        tags: [ecommerce, digital-products]
+
+  - id: automate
+    title: Automate
+    description: Automate your business operations
+    color: "#14B8A6"
+    icon: Settings
+    resources:
+      - title: Zapier
+        description: Connect your apps and automate workflows
+        url: https://zapier.com
+        tags: [automation, workflows]
+      - title: GitHub Actions
+        description: Automate your development workflow
+        url: https://github.com/features/actions
+        tags: [ci-cd, automation]
