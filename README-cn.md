@@ -4,6 +4,8 @@
 
 一个为独立开发者提供的综合资源目录，按照独立开发者旅程的不同阶段整理分类的工具和资源集合。
 
+访问网站：[独立开发者成长之路](https://kaixinbaba.github.io/IndieHackerGrowthWay)
+
 ## 目的与理念
 
 IndieHackerGrowthWay 作为独立开发者和创业者的路线图和资源中心。它将独立开发者的旅程分为六个关键阶段：

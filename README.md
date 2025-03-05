@@ -4,6 +4,8 @@
 
 A comprehensive resource directory for indie developers, featuring a curated collection of tools and resources organized by different stages of the indie hacker journey.
 
+Visit the site: [IndieHackerGrowthWay](https://kaixinbaba.github.io/IndieHackerGrowthWay)
+
 ## Purpose & Philosophy
 
 IndieHackerGrowthWay serves as a roadmap and resource hub for independent developers and entrepreneurs. It breaks down the indie hacker journey into six key stages:
