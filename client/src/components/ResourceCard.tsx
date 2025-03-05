@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, Copy, Check } from "lucide-react";
 import { useState } from "react";
 import type { Resource } from "@/lib/types";
+import { useLanguage } from "@/lib/LanguageContext";
+import { translations } from "@/lib/utils";
 
 interface ResourceCardProps {
   resource: Resource;
@@ -11,6 +13,8 @@ interface ResourceCardProps {
 
 export function ResourceCard({ resource }: ResourceCardProps) {
   const [copied, setCopied] = useState(false);
+  const { language } = useLanguage();
+  const t = translations[language];
 
   const copyUrl = async () => {
     await navigator.clipboard.writeText(resource.url);
@@ -41,7 +45,7 @@ export function ResourceCard({ resource }: ResourceCardProps) {
             onClick={() => window.open(resource.url, "_blank")}
           >
             <ExternalLink className="mr-2 h-4 w-4" />
-            Visit
+            {t.visit}
           </Button>
           <Button variant="outline" size="icon" onClick={copyUrl}>
             {copied ? (

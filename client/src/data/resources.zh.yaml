@@ -1,0 +1,90 @@
+sections:
+  - id: inspiration
+    title: 灵感启发
+    description: 获取下一个项目的想法和灵感
+    color: "#8B5CF6"
+    icon: Lightbulb
+    resources:
+      - title: Product Hunt
+        description: 发现最新产品，获得灵感
+        url: https://www.producthunt.com
+        tags: [创意, 产品, 发现]
+      - title: Indie Hackers
+        description: 向成功的独立开发者学习
+        url: https://www.indiehackers.com
+        tags: [社区, 成功案例]
+
+  - id: build
+    title: 构建
+    description: 构建MVP的工具和资源
+    color: "#3B82F6"
+    icon: Tool
+    resources:
+      - title: GitHub
+        description: 托管和管理你的代码
+        url: https://github.com
+        tags: [代码, 版本控制]
+      - title: Vercel
+        description: 部署你的Web应用
+        url: https://vercel.com
+        tags: [托管, 部署]
+
+  - id: launch
+    title: 发布
+    description: 产品发布相关资源
+    color: "#10B981"
+    icon: Rocket
+    resources:
+      - title: BetaList
+        description: 为你的创业项目获取早期用户
+        url: https://betalist.com
+        tags: [发布, 测试]
+      - title: Launch Checklist
+        description: 全面的发布清单
+        url: https://launchchecklist.dev
+        tags: [清单, 规划]
+
+  - id: grow
+    title: 成长
+    description: 增长策略和营销工具
+    color: "#F59E0B"
+    icon: TrendingUp
+    resources:
+      - title: Buffer
+        description: 社交媒体管理工具
+        url: https://buffer.com
+        tags: [社交媒体, 营销]
+      - title: Google Analytics
+        description: 追踪你的网站分析
+        url: https://analytics.google.com
+        tags: [分析, 指标]
+
+  - id: monetize
+    title: 变现
+    description: 将你的产品转化为业务
+    color: "#EF4444"
+    icon: DollarSign
+    resources:
+      - title: Stripe
+        description: 支付处理平台
+        url: https://stripe.com
+        tags: [支付, 计费]
+      - title: Gumroad
+        description: 销售数字产品
+        url: https://gumroad.com
+        tags: [电商, 数字产品]
+
+  - id: automate
+    title: 自动化
+    description: 自动化你的业务运营
+    color: "#14B8A6"
+    icon: Settings
+    resources:
+      - title: Zapier
+        description: 连接你的应用并自动化工作流
+        url: https://zapier.com
+        tags: [自动化, 工作流]
+      - title: GitHub Actions
+        description: 自动化你的开发工作流
+        url: https://github.com/features/actions
+        tags: [CI/CD, 自动化]

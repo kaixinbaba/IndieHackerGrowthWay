@@ -3,19 +3,23 @@ import { useQuery } from "@tanstack/react-query";
 import { Navigation } from "@/components/Navigation";
 import { SearchBar } from "@/components/SearchBar";
 import { ResourceSection } from "@/components/ResourceSection";
+import { LanguageSelector } from "@/components/LanguageSelector";
 import type { ResourcesData } from "@/lib/types";
-import { loadResources } from "@/lib/utils";
+import { loadResources, translations } from "@/lib/utils";
+import { useLanguage } from "@/lib/LanguageContext";
 
 export default function Home() {
   const [searchFilter, setSearchFilter] = useState("");
+  const { language } = useLanguage();
+  const t = translations[language];
 
   const { data: resourcesData, isLoading } = useQuery<ResourcesData>({
-    queryKey: ['/resources'],
-    queryFn: loadResources
+    queryKey: ['/resources', language],
+    queryFn: () => loadResources(language)
   });
 
   if (isLoading || !resourcesData) {
-    return <div className="min-h-screen flex items-center justify-center">Loading...</div>;
+    return <div className="min-h-screen flex items-center justify-center">{t.loading}</div>;
   }
 
   const { sections } = resourcesData;
@@ -28,14 +32,17 @@ export default function Home() {
         <div className="container mx-auto px-4 mb-12">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h1 className="text-4xl font-bold mb-4">
-              IndieHackerGrowthWay
+              {t.siteTitle}
             </h1>
             <p className="text-xl text-muted-foreground">
-              A curated directory of resources for every stage of your indie hacker journey
+              {t.siteDescription}
             </p>
           </div>
 
-          <SearchBar value={searchFilter} onChange={setSearchFilter} />
+          <div className="flex flex-col items-center gap-4">
+            <SearchBar value={searchFilter} onChange={setSearchFilter} placeholder={t.searchPlaceholder} />
+            <LanguageSelector />
+          </div>
         </div>
 
         {sections.map((section) => (
