@@ -6,8 +6,11 @@ import { LanguageProvider } from "@/lib/LanguageContext";
 import Home from "@/pages/home";
 
 function Router() {
+  // 使用环境变量中的 BASE_URL 作为路由的基础路径
+  const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
   return (
-    <Switch>
+    <Switch base={base}>
       <Route path="/" component={Home} />
     </Switch>
   );

@@ -8,7 +8,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export async function loadResources(language: string): Promise<ResourcesData> {
-  const response = await fetch(`/src/data/resources.${language}.yaml`)
+  const response = await fetch(`${import.meta.env.BASE_URL}src/data/resources.${language}.yaml`)
   const yamlText = await response.text()
   return parse(yamlText) as ResourcesData
 }
